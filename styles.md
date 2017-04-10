@@ -43,6 +43,7 @@ This is one of the only times a child selector should be used. It should always 
 
 
 ## Sizing (It’s All Relative)
+
 - **Almost never use px values** **(1px borders are the only exception)**
 - Default to `rems`
 - Use `ems` for breakpoints (Because [reasons](https://zellwk.com/blog/media-query-units/))
@@ -121,7 +122,7 @@ All of these can be kept in a separate "traits" file or module and referenced by
 
 Prefer all CSS be written in Javascript. This solves many of the pain points of CSS [written above](https://paper.dropbox.com/doc/Front-End-Guidelines-r5f5s2OK9p9SgNsZHs8Mg#:uid=765148768&h2=Pain-points). Our current tool of choice is [cxsync](https://www.npmjs.com/package/cxsync), it’s not perfect but it’s closest to the API we want for CSS in JS.
 
-**Advantages of CSS in JS**
+### Advantages of CSS in JS
 
 - All the power of JS in CSS, no limited pre-processors
 - With React we now have co-located HTML, javascript **and styles**.
@@ -130,7 +131,7 @@ Prefer all CSS be written in Javascript. This solves many of the pain points of 
 - CSS stays local to the component
 - https://twitter.com/rauchg/status/802328362341384192
 
-**Example (WIP)**
+### Example (WIP)
 
     import {
       color,
@@ -138,17 +139,17 @@ Prefer all CSS be written in Javascript. This solves many of the pain points of 
       radius,
       scale,
       shadow,
-      ems
-    } from 'rug/values'
+      size
+    } from 'rug'
 
     const styles = {
       button: {
         fontSize: scale(1),
-        borderRadius: radius(4)
+        borderRadius: size(4)
         backgroundColor: color.green,
         color: color.lightest,
-        padding: `${ems(2)} ${ems(4)}`,
-        shadow: shadow(2)
+        padding: `${size(2)} ${size(4)}`,
+        shadow: shadow[2]
         ':hover': {
           opacity: opacity.lightest
         }
@@ -158,8 +159,8 @@ Prefer all CSS be written in Javascript. This solves many of the pain points of 
 ## Tools
 
 - A reset - [minimal.css](https://www.npmjs.com/package/minimal.css) (Details included in the readme and demo site)
-- A traits library - coming soon ([interim example](https://github.com/everydayhero/pcf/blob/topic/ui-setup/apps/ui/source/lib/traits/index.js))
-- CSS in JS - [cxsync](https://www.npmjs.com/package/cxsync)
+- A traits library [rug](https://www.npmjs.com/package/@everydayhero/rug)
+- CSS in JS - [stranger](https://www.npmjs.com/package/@everydayhero/stranger)
 
 *WIP (To be continued)*
 
