@@ -8,11 +8,11 @@ We are moving towards using Webpack to bundle and compile the source for our JS 
 >
 > Webpack takes modules with dependencies and generates static assets representing those modules.
 
-We use Webpack because of it’s focus on treating static assets and JS modules as declarative dependencies. Images, CSS and JS modules are all part of the dependency graph of your application.
+We use Webpack because of its focus on treating static assets and JS modules as declarative dependencies. Images, CSS and JS modules are all part of the dependency graph of your application.
 
 Webpack has a growing and active community of contributors as well a large eco-system of [plugins](http://webpack.github.io/docs/list-of-plugins.html) and [loaders](http://webpack.github.io/docs/list-of-loaders.html) which fulfil many front-end build requirements.
 
-Another key advantage is the developer experience, with supporter for a watch mode with incremental rebuilding and a dev server with an in-memory cache of your project’s compilation.
+Another key advantage is the developer experience, with support for a watch mode with incremental rebuilding and a dev server with an in-memory cache of your project’s compilation.
 
 Web pack configuration management can be challenging, in response to this [many tools](https://github.com/facebookincubator/create-react-app#alternatives) have been developed around it to help with co-ordination of dependant options and synchronisation of development vs production output and behaviour.
 
@@ -30,11 +30,11 @@ https://github.com/everydayhero/boiler-room-builder
 
 [Quite a ‘complete’ setup for a professional services site](https://github.com/everydayhero/strava-challenge/commit/29d748aea2d7f30f2966cb7d4eac3a45f51f9832)
 
-## Tools
-
 We’re currently in the process of defining how we structure applications. For now it’s best to follow the [examples on the React Router docs](https://github.com/reactjs/react-router/tree/master/examples) as a starting point.
 
 Options: https://gist.github.com/bradparker/679ad96aac848ca916facc450a8f91dc
+
+## Tools
 
 ### Boilermaker (BRM)
 
