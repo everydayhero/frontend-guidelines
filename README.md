@@ -18,6 +18,7 @@ For technical sections, include:
 - [Values](values.md)
 - [Styles](styles.md)
 - [Components](components.md)
+- [Directory Structure](directory-structure.md)
 - [Linting](linting.md)
 - [Testing](testing.md)
 - [Bootstrapping/Build](bootstrapping.md)
